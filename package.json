@@ -32,11 +32,19 @@
   "dependencies": {
     "gulp-util": "~2.2.14",
     "through": "~2.3.4",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "through2": "^3.0.1",
+    "vinyl": "^2.2.0"
   },
   "devDependencies": {
-    "mocha-jshint": "0.0.7",
+    "@types/gulp-util": "^3.0.34",
+    "@types/lodash": "^4.14.138",
+    "@types/node": "^12.7.2",
+    "@types/through2": "^2.0.34",
+    "@types/vinyl": "^2.0.3",
     "chai": "~1.8.1",
-    "mocha": "~1.16.2"
+    "mocha": "^6.2.0",
+    "mocha-jshint": "^2.3.1",
+    "typescript": "^3.6.2"
   }
 }
