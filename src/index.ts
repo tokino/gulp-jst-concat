@@ -17,7 +17,6 @@ function compile(file, renameKeys) {
 
 function buildJSTString(file, renameKeys) {
     const template = compile(file, renameKeys);
-    console.log(template.fnSource);
     return `"${template.name}": ${template.fnSource}`;
 }
 
@@ -28,7 +27,7 @@ module.exports = function jstConcat(fileName: string, _opts: any) {
 
     const defaults = {renameKeys: ['.*', '$&']},
         opts = _.extend({}, defaults, _opts),
-    files: string[] = [];
+        files: string[] = [];
 
     return through.obj(function (file, encoding, callback) {
         if (file.isNull()) {
